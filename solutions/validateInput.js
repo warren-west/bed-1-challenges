@@ -59,7 +59,6 @@ export function validateArray(array) {
 // then, let's do the same thing for an object
 
 export function validateObject(object) {
-
     // object: { name: "Warren" } object.length: undefined
     // object: { name: "Warren", length: "long" }
 

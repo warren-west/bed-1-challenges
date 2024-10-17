@@ -69,6 +69,10 @@ console.log(typeof null)
 console.log(typeof [])
 console.log(typeof {})
 
+// Arrays are objects 😮
+console.log({ name: "Warren" })
+console.log([ "1", "2", "3" ])
+
 console.log(validateObject({}))
 console.log(validateObject())
 console.log(validateObject(null))
@@ -79,3 +83,22 @@ console.log(validateObject("115"))
 console.log(validateObject(false))
 console.log(validateObject(true))
 console.log(validateObject(["test"]))
+
+
+// fetch("myurl.com/api")
+//   .then((resp) => resp.json())
+//   .then((json) => console.log(json))
+//   .catch((error) => console.log(error))
+
+// $.ajax({
+//     url: "myurl.com/api",
+//     success: (resp) => {
+//         console.log(resp) // already deserialized to JS Object
+//     },
+//     error: (error) => {
+//         console.log(error)
+//     }
+// })
+
+console.log(JSON.stringify({name: "Warren", age: 32}))
+console.log(JSON.parse('{"name": "Warren", "age": 32}'))
