@@ -3,6 +3,7 @@ import { reverseSentence } from './solutions/revSentence.js'
 import { possibleBonusDynamicDieSize, possibleBonusV1, possibleBonusV2 } from './solutions/tileTeamwork.js'
 import { jackpot, jackpotV2 } from './solutions/jackpot.js'
 import { validateObject, validateStringInput } from './solutions/validateInput.js'
+import { findNemo, findNemoV2 } from './solutions/findingNemo.js'
 
 // Test repeating digits
 // console.log("-11", isRepDigit(-11))
@@ -64,25 +65,25 @@ import { validateObject, validateStringInput } from './solutions/validateInput.j
 // possibleBonusV1(null, undefined)
 // possibleBonusV1("hello", "")
 
-console.log(typeof undefined)
-console.log(typeof null)
-console.log(typeof [])
-console.log(typeof {})
+// console.log(typeof undefined)
+// console.log(typeof null)
+// console.log(typeof [])
+// console.log(typeof {})
 
 // Arrays are objects 😮
-console.log({ name: "Warren" })
-console.log([ "1", "2", "3" ])
+// console.log({ name: "Warren" })
+// console.log([ "1", "2", "3" ])
 
-console.log(validateObject({}))
-console.log(validateObject())
-console.log(validateObject(null))
-console.log(validateObject(undefined))
-console.log(validateObject({ hello: "World!" }))
-console.log(validateObject(1))
-console.log(validateObject("115"))
-console.log(validateObject(false))
-console.log(validateObject(true))
-console.log(validateObject(["test"]))
+// console.log(validateObject({}))
+// console.log(validateObject())
+// console.log(validateObject(null))
+// console.log(validateObject(undefined))
+// console.log(validateObject({ hello: "World!" }))
+// console.log(validateObject(1))
+// console.log(validateObject("115"))
+// console.log(validateObject(false))
+// console.log(validateObject(true))
+// console.log(validateObject(["test"]))
 
 
 // fetch("myurl.com/api")
@@ -100,5 +101,14 @@ console.log(validateObject(["test"]))
 //     }
 // })
 
-console.log(JSON.stringify({name: "Warren", age: 32}))
-console.log(JSON.parse('{"name": "Warren", "age": 32}'))
+// console.log(JSON.stringify({name: "Warren", age: 32}))
+// console.log(JSON.parse('{"name": "Warren", "age": 32}'))
+
+console.log(findNemo("I am finding Nemo !"))
+console.log(findNemo("Nemo is me"))
+console.log(findNemo("I Nemo am"))
+console.log(findNemo("The fish you are looking for doesn't exist here"))
+console.log(findNemoV2("I am finding Nemo !"))
+console.log(findNemoV2("Nemo is me"))
+console.log(findNemoV2("I Nemo am"))
+console.log(findNemoV2("The fish you are looking for doesn't exist here"))
