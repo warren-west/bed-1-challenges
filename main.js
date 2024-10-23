@@ -4,6 +4,7 @@ import { possibleBonusDynamicDieSize, possibleBonusV1, possibleBonusV2 } from '.
 import { jackpot, jackpotV2 } from './solutions/jackpot.js'
 import { validateObject, validateStringInput } from './solutions/validateInput.js'
 import { findNemo, findNemoV2 } from './solutions/findingNemo.js'
+import { capitalsToFront, capToFrontV2, capToFrontV3 } from './solutions/bigSmallLetters.js'
 
 // Test repeating digits
 // console.log("-11", isRepDigit(-11))
@@ -104,11 +105,22 @@ import { findNemo, findNemoV2 } from './solutions/findingNemo.js'
 // console.log(JSON.stringify({name: "Warren", age: 32}))
 // console.log(JSON.parse('{"name": "Warren", "age": 32}'))
 
-console.log(findNemo("I am finding Nemo !"))
-console.log(findNemo("Nemo is me"))
-console.log(findNemo("I Nemo am"))
-console.log(findNemo("The fish you are looking for doesn't exist here"))
-console.log(findNemoV2("I am finding Nemo !"))
-console.log(findNemoV2("Nemo is me"))
-console.log(findNemoV2("I Nemo am"))
-console.log(findNemoV2("The fish you are looking for doesn't exist here"))
+// console.log(findNemo("I am finding Nemo !"))
+// console.log(findNemo("Nemo is me"))
+// console.log(findNemo("I Nemo am"))
+// console.log(findNemo("The fish you are looking for doesn't exist here"))
+// console.log(findNemoV2("I am finding Nemo !"))
+// console.log(findNemoV2("Nemo is me"))
+// console.log(findNemoV2("I Nemo am"))
+// console.log(findNemoV2("The fish you are looking for doesn't exist here"))
+
+// console.log(capitalsToFront("hApPy"))
+// console.log(capitalsToFront("moveMENT"))
+// console.log(capitalsToFront("shOrtCAKE"))
+
+console.log(capToFrontV2("hApPy"))
+console.log(capToFrontV2("moveMENT"))
+console.log(capToFrontV2("shOrtCAKE"))
+
+
+capToFrontV3()
