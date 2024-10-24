@@ -5,6 +5,7 @@ import { jackpot, jackpotV2 } from './solutions/jackpot.js'
 import { validateObject, validateStringInput } from './solutions/validateInput.js'
 import { findNemo, findNemoV2 } from './solutions/findingNemo.js'
 import { capitalsToFront, capToFrontV2, capToFrontV3 } from './solutions/bigSmallLetters.js'
+import { multiplyIndexes } from './solutions/multiplyIndexes.js'
 
 // Test repeating digits
 // console.log("-11", isRepDigit(-11))
@@ -118,9 +119,12 @@ import { capitalsToFront, capToFrontV2, capToFrontV3 } from './solutions/bigSmal
 // console.log(capitalsToFront("moveMENT"))
 // console.log(capitalsToFront("shOrtCAKE"))
 
-console.log(capToFrontV2("hApPy"))
-console.log(capToFrontV2("moveMENT"))
-console.log(capToFrontV2("shOrtCAKE"))
+// console.log(capToFrontV2("hApPy"))
+// console.log(capToFrontV2("moveMENT"))
+// console.log(capToFrontV2("shOrtCAKE"))
 
+// capToFrontV3()
 
-capToFrontV3()
+console.log(multiplyIndexes([5, 4, 3]))
+console.log(multiplyIndexes([]))
+console.log(multiplyIndexes([5, 4, 3, 5, 3, 6, 7]))
