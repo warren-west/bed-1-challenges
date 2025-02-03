@@ -6,6 +6,7 @@ import { validateObject, validateStringInput } from './solutions/validateInput.j
 import { findNemo, findNemoV2 } from './solutions/findingNemo.js'
 import { capitalsToFront, capToFrontV2, capToFrontV3 } from './solutions/bigSmallLetters.js'
 import { multiplyIndexes } from './solutions/multiplyIndexes.js'
+import { isSpecialArray } from './solutions/specialArrays.js'
 
 // Test repeating digits
 // console.log("-11", isRepDigit(-11))
@@ -125,6 +126,10 @@ import { multiplyIndexes } from './solutions/multiplyIndexes.js'
 
 // capToFrontV3()
 
-console.log(multiplyIndexes([5, 4, 3]))
-console.log(multiplyIndexes([]))
-console.log(multiplyIndexes([5, 4, 3, 5, 3, 6, 7]))
+// console.log(multiplyIndexes([5, 4, 3]))
+// console.log(multiplyIndexes([]))
+// console.log(multiplyIndexes([5, 4, 3, 5, 3, 6, 7]))
+
+console.log(isSpecialArray([2, 7, 4, 9, 6, 1, 6, 3]))
+console.log(isSpecialArray([2, 7, 9, 1, 6, 1, 6, 3]))
+console.log(isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3]))
