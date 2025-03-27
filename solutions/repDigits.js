@@ -1,6 +1,6 @@
 function isRepDigitMath(num) {
     // if (num === 0) return true
-    
+
     const lastDig = num % 10
 
     let check = num, count = 0
