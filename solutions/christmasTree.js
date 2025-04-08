@@ -1,3 +1,5 @@
+// https://edabit.com/challenge/QeaCDhw3QrLwbeteD
+
 function tree(height) {
     height = parseInt(height)
 
@@ -36,13 +38,13 @@ function addTrunk(tree, height) {
     tree.push(trunk.join(''))
 }
 
-// console.log(tree(1))
-// console.log(tree(2))
-// console.log(tree(5))
+console.log(tree(1))
+console.log(tree(2))
+console.log(tree(5))
 
 // h=5
 //        12345
-//  1    '    #    '      3  ->                                                                           
+//  1    '    #    '                                                                         
 //  2    '   ###   '                                                                                
 //  3    '  #####  '                                                                                
 //  4    ' ####### '                                                                                
@@ -74,10 +76,10 @@ for (let i = 1; i <= height; i++) {
 console.log(output)
 
 
-[
-    '    #    ',
-    '   ###   ',
-    '  #####  ',
-    ' ####### ',
-    '#########'
-]
+// [
+//     '    #    ',
+//     '   ###   ',
+//     '  #####  ',
+//     ' ####### ',
+//     '#########'
+// ]
