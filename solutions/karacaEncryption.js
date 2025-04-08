@@ -1,4 +1,4 @@
-const vowels = {a: '0', e: '1', i: '2', o: '2', u: '3'}
+const vowels = { a: '0', e: '1', i: '2', o: '2', u: '3' }
 const suffix = 'aca'
 
 /*
@@ -21,15 +21,36 @@ function encrypt(string) {
 
 function encrypt2(string) {
     return string
-    .split('')
-    .reverse()
-    .map(c => vowels[c] ? vowels[c] : c)
-    .join('')
-    .concat(suffix)
+        .split('')
+        .reverse()
+        .map(c => vowels[c] ? vowels[c] : c)
+        .join('')
+        .concat(suffix)
 }
 
-console.log(encrypt("banana"))
-console.log(encrypt("karaca"))
-console.log(encrypt("burak"))
-console.log(encrypt("alpaca"))
-console.log(encrypt("Warren"))
+// console.log(encrypt("banana"))
+// console.log(encrypt("karaca"))
+// console.log(encrypt("burak"))
+// console.log(encrypt("alpaca"))
+// console.log(encrypt("Warren"))
+// console.log(encrypt("incorrect"))
+
+function encryptWord(word) {
+    // Reverse the word
+    let reversedWord = word.split('').reverse().join('');
+   
+    // Replace all the vowels
+    let vowelMap = {a: '0', e: '1', i: '2', o: '2', u: '3'};
+    let transformedWord = reversedWord.replace(/[aeiou]/g, char => vowelMap[char]);
+   
+    // Append "aca" to the end
+    let finalWord = transformedWord + "aca";
+   
+    return finalWord;
+}
+ 
+// Usage
+let words = ["apple", "banana", "burak"];
+words.forEach(word => {
+    console.log(`"${word}" => "${encryptWord(word)}"`);
+});
