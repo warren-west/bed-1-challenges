@@ -38,9 +38,22 @@ function addTrunk(tree, height) {
     tree.push(trunk.join(''))
 }
 
-console.log(tree(1))
-console.log(tree(2))
-console.log(tree(5))
+function printTree(tree) {
+    let message = ``
+
+    for (let item of tree) {
+        message += `${item}\n`
+    }
+
+    console.log(message.trimEnd())
+}
+
+
+
+
+// printTree(tree(1))
+// printTree(tree(2))
+// printTree(tree(5))
 
 // h=5
 //        12345
@@ -55,25 +68,15 @@ let output = []
 
 for (let i = 1; i <= height; i++) {
     // i = 1, 2, 3, 4, 5
-    let treeLeft = ''
-
-    // first (' 's)
-    for (j = 0; j < height - i; j++) {
-        treeLeft += ' '
-    }
-
-    // second part (#s)
-    for (k = 0; k < i; k++) {
-        treeLeft += '#'
-    }
+    output.push(`${' '.repeat(height - i)}${'#'.repeat(i)}${'#'.repeat(i-1)}${' '.repeat(height - i)}`)
 
     //            12345
     // buildTree "    #"
-    let treeRight = treeLeft.slice(0, height - 1).split('').reverse().join('')
-    output.push(treeLeft + treeRight)
+    // let treeRight = treeLeft.slice(0, height - 1).split('').reverse().join('')
+    // output.push(treeLeft + treeRight)
 }
 
-console.log(output)
+printTree(output)
 
 
 // [
